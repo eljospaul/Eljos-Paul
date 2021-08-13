@@ -1,2 +1,2 @@
 # Blog
-A Blog Website
+Blog Website
