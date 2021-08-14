@@ -94,18 +94,21 @@ display: none;
 
 .navbar {
     overflow: hidden;
+    max-width: 500px;
+    align-content: center;
+    box-align: center;
     background-color: #333;
+    border-radius: 10px;
+    margin: 10px;
   }
   
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #e0e0e0;
     transition-duration: 0.5s;
     text-align: center;
-    padding: 14px 16px;
-    border: black;
-    border-width: 10px;
+    padding: 14px 18px;
     text-decoration: none;
     font-size: 17px;
     font-family: Arial;
@@ -113,13 +116,13 @@ display: none;
   }
   
   .navbar a:hover {
-    background-color: #909090;
+    background-color: #f5f5f5;
     color: #000000;
   }
   
   .navbar a.active {
-    background-color: #f5f5f5;
-    color: black;
+    background-color: #020202;
+    color: white;
   }
   
   .navbar .icon {
