@@ -95,8 +95,6 @@ display: none;
 .navbar {
     overflow: hidden;
     max-width: 500px;
-    align-content: center;
-    box-align: center;
     background-color: #333;
     border-radius: 10px;
     margin: 10px;
