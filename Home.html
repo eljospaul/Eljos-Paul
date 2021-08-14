@@ -9,6 +9,8 @@
     <!--Link to Styles.css Sheet-->
     <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--!!!!!-Meta Tags-!!!!!-->
 
     <!--Responsive View for Devices-->
@@ -33,11 +35,25 @@
 <!--!!!!!-Body of the Site-!!!!!-->
 <body bgcolor="#f5f5f5">
 
-    <div class="navbar">
-      <a href="https://eljospaul.github.io/blog/Home.html">Home</a>
+    <div id="myNavbar" class="navbar">
+      <a class="active" href="https://eljospaul.github.io/blog/Home.html">Home</a>
       <a href="https://eljospaul.github.io/blog/Blog.html">Blog</a>
       <a href="https://eljospaul.github.io/blog/About.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
       </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myNavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
               
 
     <center><img style="max-width:100%;height:auto;padding-top: 50px;" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png" height="100px" width="100px"></center>
