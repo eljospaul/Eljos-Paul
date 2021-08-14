@@ -129,7 +129,7 @@ display: none;
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
-      display: none;
+      display: block;
     }
   }
   
