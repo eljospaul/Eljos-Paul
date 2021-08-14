@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 
-<!-- URL of Site - https://eljospaul.github.io/blog/About.html -->
+<!--!!!!!- URL of Site - https://eljospaul.github.io/blog/About.html -!!!!!-->
 
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Link to Styles.css Sheet-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--Link Menu-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--!!!!!-Meta Tags-!!!!!-->
 
@@ -26,43 +24,76 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#505050">
 
-    <!--Favicon-->
+    <!--!!!!!-Favicon-!!!!!-->
     <link rel="icon" href="https://user-images.githubusercontent.com/86939520/129336631-63e58181-b638-445e-b16e-0584362ca265.png"
     type="image/x-icon">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Eljos Paul - About</title>
 </head>
 
-
-
 <!--!!!!!-Body of the Site-!!!!!-->
-<body bgcolor="#f5f5f5">
+<body>
+    <!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">
+            <img height="35px" width="35px" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png">
+            </a>
+        </div>
+    
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <!--<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>-->
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+    </header>
+<!--===== ABOUT =====-->
+<section class="about section " id="about">
+    <h2 class="section-title">About</h2>
 
-    <center><div id="myNavbar" class="navbar">
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img height="200px" width="200px" src="https://user-images.githubusercontent.com/86939520/129448117-604ca2c3-ed7d-45dd-9bea-193eae83d99d.png" alt="Eljos">
+        </div>
         
-    <a href="https://eljospaul.github.io/blog/Home.html">Home</a>
-    <a href="https://eljospaul.github.io/blog/Blog.html">Blog</a>
-    <a class="active" href="https://eljospaul.github.io/blog/About.html">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-        </div></center>
+        <div>
+            <h2 class="about__subtitle">Eljos Paul</h2>
+            <p class="about__text">Musical Artist | Android / Web Developer | Believer | Seer</p>           
+        </div>                                   
+    </div>
+</section>
+<!--===== FOOTER =====-->
+<footer class="footer">
+    <!--<p class="footer__title">Eljos</p>-->
+    <center><a href="#" class="nav__logo">
+        <img height="50px" width="50px" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png">
+        </a></center>
+    <div class="footer__social">
+        <a onclick=" window.open('https://www.youtube.com/channel/UCRaBGgXkvsehrZDIi7Y-SfQ','_blank')" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a onclick=" window.open('https://www.facebook.com/eljospaul.faithfactormedia/','_blank')" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a onclick=" window.open('https://www.instagram.com/eljos__/','_blank')" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <p>Copyright &#169; 2021 Eljos Paul.</p>
+</footer>
 
-        <script>
-        function myFunction() {
-            var x = document.getElementById("myNavbar");
-            if (x.className === "navbar") {
-            x.className += " responsive";
-            } else {
-            x.className = "navbar";
-            }
-        }
-            </script>
-                
 
-    <center><img style="max-width:100%;height:auto;padding-top: 50px;" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png" height="100px" width="100px"></center>
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-    <center><h1><font color="#505050" Face= "Century Gothic Light">Hi, Welcome About</font></h1></center>
-
-    <center><button style="height:20px;width:150px" class="button button1" onclick=" window.open('https://www.youtube.com/channel/UCRaBGgXkvsehrZDIi7Y-SfQ','_blank')"><center>Learn More<center></button>
-
+<!--===== MAIN JS =====-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
