@@ -36,7 +36,6 @@ margin: 0;
 .navbar {
 overflow: hidden; /* Hide overflow */
 background-color: #505050; /* Dark background color */
-text-align: center;
 }
 
 /* Style the navigation bar links */
@@ -85,7 +84,7 @@ display: none;
     top: 0;
 }
 .navbar.responsive a {
-    float: none;
+    float: left;
     display: block;
     text-align: left;
 }
