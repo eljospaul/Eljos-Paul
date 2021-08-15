@@ -483,8 +483,11 @@ transform: scale(1.1);
 /* ===== CONTACT =====*/
 .contact__input{
 width: 100%;
+resize: vertical;
+max-height: 250px;
 font-size: var(--normal-font-size);
 font-weight: var(--font-semi);
+font-family: Helvetica;
 padding: 1rem;
 border-radius: .5rem;
 border: 1.5px solid var(--second-color);
