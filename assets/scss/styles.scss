@@ -321,7 +321,7 @@ border-radius: .5rem;
 /* ===== WORK =====*/
 .work{
 &__container{
-    row-gap: 2rem;
+    row-gap: 25px;
 }
 &__img{
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
@@ -462,7 +462,7 @@ body{
 }
 .work{
     &__container{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
     }
