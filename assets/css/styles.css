@@ -364,6 +364,7 @@ color: var(--first-color);
 }
 .home__img{
 position: absolute;
+vertical-align: middle;
 right: 0;
 bottom: 0;
 }
