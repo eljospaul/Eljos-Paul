@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    
 
     <!--!!!!!-Meta Tags-!!!!!-->
 
@@ -31,6 +32,8 @@
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Eljos Paul - Contact</title>
 </head>
 
@@ -48,10 +51,9 @@
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="About.html" class="nav__link active">About</a></li>
-                <!--<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>-->
+                <li class="nav__item"><a href="About.html" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="Blog.html" class="nav__link">Blog</a></li>
-                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link active">Contact</a></li>
             </ul>
         </div>
     
@@ -65,11 +67,11 @@
     <h2 class="section-title">Contact</h2>
 
     <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input">
-            <input type="email" placeholder="Email" class="contact__input">
-            <textarea type="text" name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <input type="button" value="Send" class="contact__button button">
+        <form id="submit-form" action="" class="contact__form">
+            <input id="fname" name="name" type="text" placeholder="Name" class="contact__input">
+            <input id="lname" name="email" type="email" placeholder="Email" class="contact__input">
+            <textarea id="subject" name="message" type="text" cols="0" rows="10" class="contact__input"></textarea>
+            <input type="submit" value="Send" class="contact__button button">
         </form>
     </div>
 </section>
@@ -94,5 +96,25 @@
 
 <!--===== MAIN JS =====-->
 <script src="assets/js/main.js"></script>
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwM4NvhNom5r2JneUwD1i-vDd2ph4qj51YphA31fht4QmYbOZzwkGxRBc3FXwg_9f5S/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                //alert("Form submitted successfully")
+                window.location.reload()
+                window.location.href="https://eljospaul.ga/Success.html"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 </html>
