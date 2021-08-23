@@ -3,10 +3,16 @@ body {
 margin: 0;
 background: white;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   iframe{
     width: 560px;
     height: 315px;
+  } 
+}
+@media screen and (max-width: 280px) {
+  iframe{
+    width: 250px;
+    height: 143px;
   } 
 }
 
