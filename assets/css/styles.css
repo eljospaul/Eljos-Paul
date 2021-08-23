@@ -1,37 +1,14 @@
-/* Style the Button
-.button {
-background-color: #f5f5f5;
-border: none;
-color: whi16te;
-padding: px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-transition-duration: 0.5s;
-cursor: pointer;
-text-align: center;
-line-height: 2px;
-}
-.button1 {
-background-color: #f5f5f5;
-color: black;
-border: 2px solid #202020;
-}
-.button1:hover {
-    background-color: #202020;
-    color: white;
-}
-.button1 {border-radius: 10px;}
-
-
 /* Style the Body */
 body {
 margin: 0;
 background: white;
 }
-
+@media screen and (max-width: 600px) {
+  iframe{
+    max-width: 560px;
+    max-height: 315px;
+  } 
+}
 
 .navbar {
     overflow: hidden;
