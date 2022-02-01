@@ -1,111 +1,113 @@
 <!DOCTYPE html>
-
-<!--!!!!!- URL of Site - https://eljospaul.github.io/blog/About.html -!!!!!-->
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-
-    <!--!!!!!-Meta Tags-!!!!!-->
-
-    <!--Responsive View for Devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#505050">
-
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#505050">
-
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#505050">
-
-    <!--!!!!!-Favicon-!!!!!-->
-    <link rel="icon" href="https://user-images.githubusercontent.com/86939520/129336631-63e58181-b638-445e-b16e-0584362ca265.png"
-    type="image/x-icon">
-
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Eljos Paul - About</title>
-</head>
-
-<!--!!!!!-Body of the Site-!!!!!-->
-<body>
-    <!--===== HEADER =====-->
-<header class="l-header">
-    <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav__logo">
-            <img alt="Eljos Paul Logo" height="35px" width="35px" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png">
-            </a>
+    <head>
+        <title>Eljos Paul</title>
+        <link rel="shortcut icon" href="assets/images/Eljos Paul.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/cursor.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/scroll.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+        <meta name="keywords" content="eljos, eljos paul, Eljos, Eljos Paul, faith factor media eljos, eljos paul website, Eljos Paul Website, ELJOS PAUL, faith factor media"/>
+        <meta name="description" content="Christian Musicial Artist from Faith Factor Media, a Worship Music Band"/>
+        <meta name="subject" content="Eljos Paul">
+        <meta name="copyright"content="Faith Factor Media">
+        <meta name="language" content="en">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="robots" content="index,follow" />
+        <meta name="topic" content="Personal Blog">
+        <meta name="Eljos" content="Eljos Paul, eljospaul@gmail.com">
+        <meta name="owner" content="Eljos Paul">
+        <meta name="url" content="https://www.eljospaul.ga">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+        <meta name="og:title" content="Eljos Paul"/>
+        <meta name="og:type" content="blog"/>
+        <meta name="og:url" content="https://eljospaul.ga/about.html"/>
+        <meta name="og:image" content="https://eljospaul.ga/assets/images/Elvis.and.Eljos.jpg"/>
+        <meta name="og:site_name" content="Eljos Paul - Welcome Home"/>
+        <meta name="og:description" content="Christian Musicial Artist from Faith Factor Media, a Worship Music Band"/>
+        <meta name="og:country-name" content="India"/>
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <div class="b">
+            <div class="sideBar">
+                <div class="sideBar-LogoDiv"><a href="/"><img itemtype="https://schema.org/logo" class="sideBar-Logo" src="assets/images/Eljos Paul.png" alt="Faith Factor Media"></a></div>
+                <div class="social">
+                    <div class="socialMedia">
+                        <a class="socialIcons" target="_blank" href="https://www.youtube.com/channel/UCRaBGgXkvsehrZDIi7Y-SfQ"><i class="bi bi-youtube"></i></a>
+                        <a class="socialIcons" target="_blank" href="https://facebook.com/eljospaul.faithfactormedia"><i class="bi bi-facebook"></i></a>
+                        <a class="socialIcons" target="_blank" href="https://instagram.com/eljos__/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="mode">
+                        <button class="modeIcon" onclick="mode()"><i id="modeIconBtn" class="bi bi-moon-stars-fill"></i></button>
+                    </div>
+                    <div class="mode hamburgerIcon">
+                        <button class="modeIcon" onclick="openNav()">&#9776;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="exSideBar">
+                <div id="sidepanelId" class="sidepanel">
+                    <div class="inSidepanel">
+                        <p class="closebtn" onclick="closeNav()">×</p>
+                        <a href="/">Home</a>
+                        <a class="navActive" href="/about.html">About</a>
+                        <a href="/gallery.html">Gallery</a>
+                        <a href="/contact.html">Contact</a>
+                        <div class="mode">
+                            <button class="modeIcon" onclick="mode()"><i id="modeIconBtn2" class="bi bi-moon-stars-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <div class="navbar-left50">
+                        <li><a href="/">Home</a></li>
+                        <li><a class="navActive" href="/about.html">About</a></li>
+                        <li><a href="/galleryindex.html">Gallery</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </div>
+                    <div class="0">
+                        <a class="menuIcon" onclick="openNav()">&#9776;</a>
+                    </div>
+                    <div class="navbar-right50">
+                        <a href="https://www.youtube.com/watch?v=CDKIxx9mWPM" target="_blank"><button class="navButton">Learn More</button></a>
+                    </div>
+                </nav>
+                <div class="exNavbar" style="display: flex; overflow-y: scroll; overflow-x: hidden; padding: 0 50px; flex-direction: column; align-items: center;">
+                    <div class="about1" style="display: flex; flex-direction: column; align-items: center;">
+                        <h5 class="about-text" style="margin-top: 50px;">About me</h5>
+                        <img src="assets/images/Elvis.and.Eljos.jpg" style="margin-bottom: 15px; border-radius: 50%;" width="150px" height="150px" alt="Eljos & Elvis">
+                        <p style="width: 100%; color: grey; text-align: center;">Hey! My name is Eljos and I'm a Musical Artist at Faith Factor Media</p>
+                        <p style="width: 100%; color: grey; text-align: center;">& Front-End developer working on small projects.</p>
+                    </div>
+                    <div class="about2" style="display: flex; flex-direction: column; align-items: center;">
+                        <h5 class="about-text" style="margin-top: 50px;">About Faith Factor Media</h5>
+                        <img src="assets/images/Faith Factor Media.png" style="margin-bottom: 15px;" width="150px" height="150px" alt="Eljos Paul">
+                        <p style="width: 100%; color: grey; text-align: center;">Faith Factor Media is a Christian community with a goal to share</p>
+                        <p style="width: 100%; color: grey; text-align: center;">God's word and love to the world, mainly focusing on Christian music on Youtube and </p>
+                        <p style="width: 100%; color: grey; text-align: center; margin-bottom: 50px;">other online music platforms & Daily Bible Verses on Instagram.</p>
+                    </div>
+                </div>
+                <div class="downBar">
+                    <div class="downBar-shortBio">
+                        <div class="shortBio">
+                            <p style="font-weight: 500; transition: 2000ms;">Creating Unique Designs! Deploying the Ideas.</p>
+                            <p style="color: var(--mobileShortBioP); font-weight: bold; font-size: 11px; transition: 2000ms; font-size: 10px; opacity: .75;">All Rights Reserved © <span id="copyrightYear">Year</span> Eljos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="About.html" class="nav__link active">About</a></li>
-                <li class="nav__item"><a href="Blog.html" class="nav__link">Blog</a></li>
-                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
-            </ul>
-        </div>
-    
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
-    </nav>
-    </header>
-<!--===== ABOUT =====-->
-<section class="about section" id="about">
-    <h2 class="section-title">About</h2>
-
-    <div class="about__container bd-grid" style="margin-bottom: 100px;">
-        <div class="about__img">
-            <img alt="Eljos Paul Logo" height="200px" width="200px" src="https://user-images.githubusercontent.com/86939520/129448117-604ca2c3-ed7d-45dd-9bea-193eae83d99d.png" alt="Eljos">
-        </div>
-        
-        <div>
-            <h2 class="about__subtitle">Eljos Paul</h2>
-            <p style="font-size: small; font-weight: 600;" class="about__text">Eljos Paul is a Christian contemporary Musical Artist from Kerala, India</p>           
-        </div>                                   
-    </div>
-
-    <h2 class="section-title">Faith Factor Media</h2>
-
-    <div class="about__container bd-grid" style="margin-bottom: 100px;">
-        <div class="about__img">
-            <img alt="Faith Factor Media Logo" height="200px" width="200px" src="assets/images/Faith Factor Media.png">
-        </div>
-        
-        <div>
-            <h2 class="about__subtitle">Faith Factor Media</h2>
-            <p style="font-size: small; font-weight: 600;" class="about__text">Faith Factor Media is a worship music band from the country, IN, where they started making music<br> in 2019. the band consists of worship leaders<br> including, Eljos Paul, Elvis Sam Paul. Mainly focusing on worship songs and albums. The Band<br> released the song ‘WAY MAKER’ featuring<br> Artists from different regions. The band composes songs and performs in church services as<br> well as concerts, Sharing the word of God<br> and God's love to the world.</p>           
-        </div>                                   
-    </div>
-</section>
-<!--===== FOOTER =====-->
-<footer class="footer">
-    <!--<p class="footer__title">Eljos</p>-->
-    <center><a href="#" class="nav__logo">
-        <img alt="Eljos Paul Logo" height="50px" width="50px" src="https://user-images.githubusercontent.com/86939520/129337716-73b2a56c-49b4-4f91-9900-b3fd058fa85a.png">
-        </a></center>
-    <div class="footer__social">
-        <a onclick=" window.open('https://www.youtube.com/channel/UCRaBGgXkvsehrZDIi7Y-SfQ','_blank')" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-        <a onclick=" window.open('https://www.facebook.com/eljospaul.faithfactormedia/','_blank')" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-        <a onclick=" window.open('https://www.instagram.com/eljos__/','_blank')" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-    </div>
-    <p>Copyright &#169; 2021 Eljos Paul.</p>
-</footer>
-
-
-<!--===== SCROLL REVEAL =====-->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<!--===== MAIN JS =====-->
-<script src="assets/js/main.js"></script>
-</body>
+        <meta name="siteCopyright" content="All Rights Reserved © 2021 Eljos">
+        <script type="text/javascript" src="assets/js/index.js"></script>
+        <script type="text/javascript" src="assets/js/root.js"></script>
+        <script type="text/javascript" src="assets/js/cursor.js"></script>
+        <script type="text/javascript" src="assets/js/year.js"></script>
+    </body>
 </html>
